@@ -11,9 +11,10 @@ To help visualize some of the concepts in the [blog post](https://blank-ed.githu
 ```sh
 git clone https://github.com/blank-ed/Understanding-PointNet-PlusPlus.git
 cd Understanding-PointNet-PlusPlus && pip install -r requirements.txt
+```
 
 If you want to stick with the versions that I used, run:
 
 ```sh
 pip install open3d==0.19.0 PySide6==6.8.2.1 fpsample==0.3.3
-
+```
