@@ -19,11 +19,18 @@ If you want to stick with the versions that I used, run:
 pip install open3d==0.19.0 PySide6==6.8.2.1 fpsample==0.3.3
 ```
 
-To download the dataset, follow these steps:
-1. Clone the repository that contains the dataset.
-2. Extract the `dataset.rar` file.
-3. Copy all 24 folders inside `dataset/stl/` into the `MFD_dataset` directory.
+To download the dataset, you can git clone from [this repository](https://github.com/madlabub/Machining-feature-dataset.git), extract the `dataset.rar`, and copy all 24 folders inside `dataset/stl/` into `MFD_dataset` directory. The visualizer classes allow you to select a random STL file or a specific STL file from the dataset folder MFD_dataset and convert them into a user specified number of points PCD by using a slider between the range of user specified minimum and maximum number of points. Depending on the type of visualization, the settings/parameters and the visualization window will be different. This visualizer is created using `PySide6` with `open3d` embedded inside for PCD processing. The available visualizer classes and their settings/parameters will be explained in the sections below. You can run each of the visualizers by running the following script:
 
 ```python
-import cv2
+"""Visualizers for PCD Data"""
+
+from visualizers import (
+    VisualizerPCD_FPS_vs_RandomSampling,
+    VisualizePCD_BallQuery_vs_kNN,
+)
+
+if __name__ == '__main__'
+    # Run the desired visualizer by uncommenting its line.
+    VisualizePCD_FPS_vs_RandomSampling.run()  # FPS vs Random Sampling Visualizer
+    # VisualizePCD_BallQuery_vs_kNN.run()     # Ball Query vs kNN Visualizer
 ```
