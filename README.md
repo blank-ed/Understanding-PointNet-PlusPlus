@@ -18,3 +18,12 @@ If you want to stick with the versions that I used, run:
 ```sh
 pip install open3d==0.19.0 PySide6==6.8.2.1 fpsample==0.3.3
 ```
+
+To download the dataset, follow these steps:
+1. Clone the repository that contains the dataset.
+2. Extract the `dataset.rar` file.
+3. Copy all 24 folders inside `dataset/stl/` into the `MFD_dataset` directory.
+
+```python
+import cv2
+```
