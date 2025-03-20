@@ -1,0 +1,3 @@
+open3d
+PySide6
+fpsample
