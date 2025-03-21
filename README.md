@@ -6,7 +6,7 @@ I recently came across a paper, [PointNet++](https://arxiv.org/abs/1706.02413), 
 [PointNet++](https://arxiv.org/abs/1706.02413) can be seen as an extension of [PointNet](https://arxiv.org/abs/1612.00593), but with an added hierarchical structure. The drawback pointed out for PointNet is that it does not capture local features effectively, rather processes global features unlike that of convolutional architectures that capture local patterns through kernels. Capturing local features means that for each point, we look at its neighbouring points and determine the relationship through hierarchical layers that process local regions at increasing scales. This approach allows us to better generalize to unseen shapes. Looking at global features misses out on the fine-grained details of the Point Cloud Data (PCD). Figure 1 shows PointNet++ architecture diagram. Let us first look at a basic explanation of PointNet. In the following sections, we will explore an extension of PointNet with a hierarchical structure and finally discuss PointNet++.
 
 ## Using this codebase
-To help visualize some of the concepts in the [blog post](https://blank-ed.github.io/ilyas_dawoodjee/#/blogpage/understanding_pointnet++:_aintuitive), I have created visualizer classes. To setup the visualizers, firstly download the GitHub repository and install the necessary libraries needed by running the shell commands below:
+To help visualize some of the concepts in the [blog post](https://blank-ed.github.io/ilyas_dawoodjee/#/blogpage/understanding_a_intuitive_visual), I have created visualizer classes. To setup the visualizers, firstly download the GitHub repository and install the necessary libraries needed by running the shell commands below:
 
 ```sh
 git clone https://github.com/blank-ed/Understanding-PointNet-PlusPlus.git
@@ -29,7 +29,7 @@ from visualizers import (
     VisualizePCD_BallQuery_vs_kNN,
 )
 
-if __name__ == '__main__'
+if __name__ == '__main__':
     # Run the desired visualizer by uncommenting its line.
     VisualizePCD_FPS_vs_RandomSampling.run()  # FPS vs Random Sampling Visualizer
     # VisualizePCD_BallQuery_vs_kNN.run()     # Ball Query vs kNN Visualizer
